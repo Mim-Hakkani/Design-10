@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+        <title>Bootstrap Assignment Pratices</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--favicon item is there-->
+		<link rel="shortcut icon" type="image/x-icon" href="images/logo/fav.png" />
+        <link rel="manifest" href="">
+		
+		<!--stylesheet-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/animation.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+		<!--some jquery option linkup-->
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css" media="all" />
+		
+		<!--main style & responsive style is here-->
+		<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+		
+		<!--js file-->
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		
+    </head>
+<body>
+
+<div class="button-grp text-center ">
+	<h1 class="text-center">Components of Bootstrap...</h1>
+	<div class="btn-group">
+		<a href="#" class="btn btn-primary">Primary</a>
+		<a href="#" class="btn btn-success">success</a>
+		<a href="#" class="btn btn-info">information</a>
+		<a href="#" class="btn btn-warning">Warning</a>
+		<a href="#" class="btn btn-danger">Dander</a>
+	</div>	
+</div>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+
+<!--Button group with dropdown section-->
+<h1>Dropdown section </h1>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown" style="margin-bottom: 10px;">
+  <button type="button" class="btn btn-secondary">1</button>
+  <button type="button" class="btn btn-secondary">2</button>
+
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="#">Dropdown link</a>
+      <a class="dropdown-item" href="#">Dropdown link</a>
+    </div>
+  </div>
+</div>
+
+<!--end of Button group with dropdown section-->
+
+
+<!--Card section of using bootstrap section-->
+<h1>Card Section </h1>
+<div class="card-section">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-4 col-sm-6">
+				<div class="card">
+					  <img src="images/content/img1.png" class="card-img-top img-responsive" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title">Card title</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+                     </div>
+                </div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="card">
+					  <img src="images/content/img2.png" class="card-img-top img-responsive" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title">Card title</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+                     </div>
+                </div>
+			</div>
+			<div class="col-md-4 col-sm-6 col-sm-6">
+				<div class="card">
+					  <img src="images/content/img3.png" class="card-img-top img-responsive" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title">Card title</h5>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+                     </div>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end of Card section of using bootstrap section-->
+<!--form section start-->
+<h1>Form list item</h1>
+<form action="#" method="">
+	<div class="input-group">
+		<a href="#" class="btn btn-primary"><span class="fa fa-euro"></span> Submit</a>
+		<input type="text" name="" class="form-control" placeholder="Enter your name">
+		
+	</div>
+</form>
+
+<!--end of form section-->
+
+<!--jumbtron of the text-->
+<div class="jumbotron text-center">
+	  <h1>Hello, world!</h1>
+	  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	  <hr>
+	  <p class="my-4">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+	  <a class="btn btn-info btn-lg" href="#" role="button">Learn more</a>
+</div>
+<!--end jumbtron of the text-->
+<h1>Nav tabs </h1>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link " href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Services</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+    <div class="dropdown-menu">
+	      <a class="dropdown-item" href="#">Action</a>
+	      <a class="dropdown-item" href="#">Another action</a>
+	      <a class="dropdown-item" href="#">Something else here</a>
+	      <div class="dropdown-divider"></div>
+	      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+<!--Progrss Bar -->
+<h1>Progress Bar with Animation</h1>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<!--progress bar stripped-->
+
+<!--Paginetion section of the project-->
+<h1>Pagination Example of using Bootstarap</h1>
+  <ul class="pagination justify-content-center" >
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+<!--end Paginetion section of the project-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- bootstrap link is start there -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- bootstrap link is end there -->
+
+<!--another important js file is start there-->
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+<!--main js file start there-->
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
